@@ -48,3 +48,5 @@ group :development do
 end
 
 gem "u-case", "~> 4.5"
+
+gem "devise_token_auth", "~> 1.2"
