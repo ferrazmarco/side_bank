@@ -6,5 +6,6 @@ FactoryBot.define do
     email  { Faker::Internet.email }
     document_number { Faker::IDNumber.brazilian_citizen_number(formatted: true) }
     password { Faker::Internet.password }
+    uid { SecureRandom.uuid }
   end
 end

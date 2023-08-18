@@ -6,4 +6,7 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :validatable
+
+  validates_presence_of :document_number, :email, :name
+  validates_uniqueness_of :document_number, :email
 end
