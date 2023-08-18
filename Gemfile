@@ -50,3 +50,5 @@ end
 gem "u-case", "~> 4.5"
 
 gem "devise_token_auth", "~> 1.2"
+
+gem "factory_bot", "~> 6.2"
