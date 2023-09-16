@@ -117,6 +117,7 @@ GEM
     mini_mime (1.1.5)
     minitest (5.19.0)
     msgpack (1.7.2)
+    mysql2 (0.5.5)
     net-imap (0.3.7)
       date
       net-protocol
@@ -132,7 +133,6 @@ GEM
     nokogiri (1.15.3-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
-    pg (1.5.3)
     puma (5.6.6)
       nio4r (~> 2.0)
     racc (1.7.1)
@@ -199,6 +199,7 @@ GEM
     u-case (4.5.2)
       kind (>= 5.6, < 6.0)
       u-attributes (>= 2.7, < 3.0)
+    u-struct (1.1.0)
     warden (1.2.9)
       rack (>= 2.0.9)
     websocket-driver (0.7.6)
@@ -217,12 +218,14 @@ DEPENDENCIES
   devise_token_auth (~> 1.2)
   factory_bot_rails
   faker (~> 3.2)
-  pg (~> 1.1)
+  kind
+  mysql2
   puma (~> 5.0)
   rails (~> 7.0.7)
   rspec-rails
   tzinfo-data
   u-case (~> 4.5)
+  u-struct (~> 1.1)
 
 RUBY VERSION
    ruby 3.2.2p53
